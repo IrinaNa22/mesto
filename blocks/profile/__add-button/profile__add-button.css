@@ -1,7 +1,6 @@
 .profile__add-button {
   margin: 0;
   padding: 0;
-  border: none;
   font: inherit;
   color: inherit;
   background-color: transparent;
@@ -10,7 +9,6 @@
   background-image: url(../../../images/Vector_sq.svg);
   background-repeat: no-repeat;
   width: 20%;
-  background-repeat: no-repeat;
   background-position: center;
   height: 50px;
   cursor: pointer;
