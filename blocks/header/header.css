@@ -1,0 +1,28 @@
+.header {
+  width: 68.75%;
+  margin-right: 15.6%;
+  margin-left: 15.6%;
+  margin-top: 45px;
+  height: 74px;
+  display: block;
+ }
+
+ 
+ @media screen and (max-width: 960px) {
+  .header {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+   }
+}
+
+
+@media screen and (max-width: 425px) {
+  .header {
+    margin-top: 28px;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+    width: 100%;
+  }
+}

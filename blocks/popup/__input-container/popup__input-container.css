@@ -1,0 +1,15 @@
+.popup__input-container {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  margin-right: 36px;
+  margin-left: 36px;
+}
+
+
+@media screen and (max-width: 746px) {
+  .popup__input-container {
+    margin-right: 22px;
+    margin-left: 22px;
+  }
+}

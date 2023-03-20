@@ -1,0 +1,11 @@
+.element__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+  box-sizing: border-box;
+  margin-right: 21px;
+  margin-left: 21px;
+  padding-top: 25px;
+  padding-bottom: 31px;
+ }

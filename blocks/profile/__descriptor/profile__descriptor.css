@@ -1,0 +1,17 @@
+.profile__descriptor {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #FFFFFF;
+ }
+
+
+ @media screen and (max-width: 425px) {
+  .profile__descriptor {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+  }
+}
