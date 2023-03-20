@@ -1,6 +1,6 @@
 # Интерактивная страница
 
-## [Проект: Mesto](https://irinana22.github.io/russian-travel/)
+## [Проект: Mesto](https://irinana22.github.io/mesto/)
 
 Интерактивная страница, куда можно добавлять фотографии, удалять их и ставить лайки.
 
@@ -8,6 +8,6 @@
 1. Flexbox/ Grid верстка.
 2. Методология БЭМ.
 3. Адаптивная Верстка.
-4. JavaScript
+4. JavaScript.
 
 
