@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-self: center;
   box-sizing: border-box;
+  max-width: 246px;
   margin-right: 21px;
   margin-left: 21px;
   padding-top: 25px;
-  padding-bottom: 31px;
+  padding-bottom: 25px;
  }

@@ -6,30 +6,31 @@
   line-height: 1.14;
   color: #FFFFFF;
   padding-bottom: 16px;
+  text-overflow: ellipsis;
   white-space: nowrap;
+  overflow: hidden;
+  max-width: 294px;
  }
 
  @media screen and (max-width: 860px) {
   .profile__user-name {
     font-size: 35px;
-    line-height: 1;
   }
 }
 
 @media screen and (max-width: 646px) {
   .profile__user-name {
     font-size: 27px;
-    line-height: 33px;
   }  
 }
 
 @media screen and (max-width: 425px) {
   .profile__user-name {
-    font-size: 27px;
-    line-height: 33px;
     text-align: center;
-    margin-top: 22.25px;
     padding-bottom: 14px;
+    padding-bottom: 10px;
+    margin-left: 26px;
+    padding-top: 4px;
    }
 }
 

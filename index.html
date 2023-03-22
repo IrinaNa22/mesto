@@ -12,7 +12,6 @@
       <img class="header__logo" 
            src= "images/logo.svg"
            alt="логотип Mesto">
-      <div class="header__line">
       </div>
     </header>
     <main class="content">
@@ -21,14 +20,16 @@
           <img class="profile__avatar"
                src= "images/image-avatar.jpg"
                alt="фото пользователя">
-          <div class="profile__info">
-            <h1 class="profile__user-name">Жак-Ив Кусто</h1>
-            <p class="profile__descriptor">Исследователь океана</p>
-          </div>
-          <button class="profile__edit-button">
-          </button> 
+               <div class="profile__wrapper">
+                <div class="profile__info">
+                  <h1 class="profile__user-name">Жак-Ив Кусто</h1>
+                  <button class="profile__edit-button" type="button" aria-label="Редактировать">
+                  </button> 
+                </div>
+                <p class="profile__descriptor">Исследователь океана</p>  
+              </div>
         </div>
-        <button class="profile__add-button">
+        <button class="profile__add-button" type="button" aria-label="Добавить">
         </button>
       </section>
       <section class="photo-grid">
@@ -37,51 +38,43 @@
                alt="фото Карачаевск">
           <div class="element__wrapper">
             <h2 class="element__name">Карачаево-Черкесия</h2>
-            <button class="element__button-like">
-              <img src="./images/Vector-like.png"
-                   alt="Нравится">
+            <button class="element__button-like" type="button" aria-label="Нравится">
             </button>
           </div>
         </div>
         <div class="element">
           <img class="element__photo" src="./images/elbrus.jpg"
-               alt="фото Эльбрус">
+            alt="фото Эльбрус">
           <div class="element__wrapper">
             <h2 class="element__name">Гора Эльбрус</h2>
-            <button class="element__button-like">
-              <img src="./images/Vector-like.png"
-                   alt="Нравится">
+            <button class="element__button-like" type="button">
             </button>
           </div>
         </div>
         <div class="element">
-          <img class="element__photo" src="./images/dombai.jpg">
+          <img class="element__photo" src="./images/dombai.jpg"
+            alt="Фото Домбай">
           <div class="element__wrapper">
             <h2 class="element__name">Домбай</h2>
-            <button class="element__button-like">
-              <img src="./images/Vector-like.png"
-                   alt="Нравится">
+            <button class="element__button-like" type="button">
             </button>
           </div>
         </div>
         <div class="element">
           <img class="element__photo" src="./images/elbrus.jpg"
-               alt="фото Эльбрус">
+            alt="фото Эльбрус">
           <div class="element__wrapper">
             <h2 class="element__name">Гора Эльбрус</h2>
-            <button class="element__button-like">
-              <img src="./images/Vector-like.png"
-                   alt="Нравится">
+            <button class="element__button-like" type="button">
             </button>
           </div>
         </div>
         <div class="element">
-          <img class="element__photo" src="./images/dombai.jpg">
+          <img class="element__photo" src="./images/dombai.jpg"
+            alt="Фото Домбай">
           <div class="element__wrapper">
             <h2 class="element__name">Домбай</h2>
-            <button class="element__button-like">
-              <img src="./images/Vector-like.png"
-                   alt="Нравится">
+            <button class="element__button-like" type="button">
             </button>
           </div>
         </div>
@@ -90,33 +83,37 @@
                alt="фото Карачаевск">
           <div class="element__wrapper">
             <h2 class="element__name">Карачаевск</h2>
-            <button class="element__button-like">
-              <img src="./images/Vector-like.png"
-                   alt="Нравится">
+            <button class="element__button-like" type="button">
             </button>
           </div>
         </div>
       </section>
-      <section class="popup">
+      </main> 
+      <footer class="footer">
+        <p class="footer__author">&copy; 2023 Mesto Russia</p>
+      </footer>  
+        <div class="popup">
         <div class="popup__container">
-          <button class="popup__close-button">
+          <button class="popup__close-button" type="button" aria-label="Закрыть">
           </button>
-          <form class="popup__form">
+          <form name="edit-form" class="popup__form">
             <h2 class="popup__form-heading">Редактировать профиль
             </h2>
             <fieldset class="popup__input-container">
-              <input  class="popup__form-item popup__input-name" placeholder="Имя">
-              <input type="text" class="popup__form-item popup__input-descriptor" placeholder="О себе">
-              <button type="submit" class="popup__save-button">Сохранить
+              <input  class="popup__form-item popup__form-item_input_name" 
+                name="user-name" 
+                type="text" 
+                placeholder="Имя">
+              <input class="popup__form-item popup__form-item_input_descriptor" 
+                name="user-descriptor" 
+                type="text"  
+                placeholder="О себе">
+              <button class="popup__save-button" type="submit" aria-label="Сохранить">Сохранить
               </button>
             </fieldset>
           </form>
         </div>
-      </section>
-      </main>
-      <footer class="footer">
-        <p class="footer__author"> &copy;2023 Mesto Russia</p>
-      </footer>
+      </div>
       <script src="./index.js">
       </script>
       </body>
