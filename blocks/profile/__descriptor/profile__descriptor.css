@@ -11,12 +11,16 @@
   max-width: 294px;
  }
 
+ @media screen and (max-width: 646px) {
+  .profile__descriptor {
+    max-width: 247px;
+  }  
+}
 
  @media screen and (max-width: 425px) {
   .profile__descriptor {
     font-size: 14px;
     line-height: 17px;
     text-align: center;
-    max-width: 247px;
   }
 }
