@@ -32,60 +32,6 @@
         </button>
       </section>
       <section class="photo-grid">
-        <div class="element">
-          <img class="element__photo" src="./images/karachaevsk.jpg"
-               alt="фото Карачаевск">
-          <div class="element__wrapper">
-            <h2 class="element__name">Карачаево-Черкесия</h2>
-            <button class="element__button-like" type="button" aria-label="Нравится">
-            </button>
-          </div>
-        </div>
-        <div class="element">
-          <img class="element__photo" src="./images/elbrus.jpg"
-            alt="фото Эльбрус">
-          <div class="element__wrapper">
-            <h2 class="element__name">Гора Эльбрус</h2>
-            <button class="element__button-like" type="button">
-            </button>
-          </div>
-        </div>
-        <div class="element">
-          <img class="element__photo" src="./images/dombai.jpg"
-            alt="Фото Домбай">
-          <div class="element__wrapper">
-            <h2 class="element__name">Домбай</h2>
-            <button class="element__button-like" type="button">
-            </button>
-          </div>
-        </div>
-        <div class="element">
-          <img class="element__photo" src="./images/elbrus.jpg"
-            alt="фото Эльбрус">
-          <div class="element__wrapper">
-            <h2 class="element__name">Гора Эльбрус</h2>
-            <button class="element__button-like" type="button">
-            </button>
-          </div>
-        </div>
-        <div class="element">
-          <img class="element__photo" src="./images/dombai.jpg"
-            alt="Фото Домбай">
-          <div class="element__wrapper">
-            <h2 class="element__name">Домбай</h2>
-            <button class="element__button-like" type="button">
-            </button>
-          </div>
-        </div>
-        <div class="element">
-          <img class="element__photo" src="./images/karachaevsk.jpg"
-               alt="фото Карачаевск">
-          <div class="element__wrapper">
-            <h2 class="element__name">Карачаевск</h2>
-            <button class="element__button-like" type="button">
-            </button>
-          </div>
-        </div>
       </section>
       </main> 
       <footer class="footer">
@@ -113,7 +59,52 @@
           </form>
         </div>
       </div>
-      <script src="./index.js">
+      <div class="popup popup_post_add">
+        <div class="popup__container">
+          <button class="popup__close-button popup__close-button_post_add" type="button" aria-label="Закрыть">
+          </button>
+          <form name="add-post-form" class="popup__form popup__form_post_add">
+            <h2 class="popup__form-heading">Новое место
+            </h2>
+            <fieldset class="popup__input-container">
+              <input  class="popup__form-item popup__form-item_input_place" 
+                name="place-name" 
+                type="text" 
+                placeholder="Название">
+              <input class="popup__form-item popup__form-item_input_link" 
+                name="photo-link" 
+                type="text"  
+                placeholder="Ссылка на картинку">
+              <button class="popup__save-button popup__save-button_post_create" type="submit" aria-label="Создать">Создать
+              </button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+      <div class="popup popup_image_large">
+        <div class="popup__container-image">
+          <button class="popup__close-button popup__close-button_image_large" type="button" aria-label="Закрыть">
+          </button>
+          <figure class="popup__figure" >
+            <img class="popup__image" >
+          <figcaption class="popup__caption"></figcaption>
+          </figure>
+        </div>
+      </div>
+      <template id="grid-element">
+        <div class="element">
+          <button class="element__delete-button" type="button" aria-label="Удалить">
+          </button>
+        <img class="element__photo" src="./images/karachaevsk.jpg"
+             alt="фото Карачаевск">
+        <div class="element__wrapper">
+          <h2 class="element__name">Карачаево-Черкесия</h2>
+          <button class="element__button-like" type="button" aria-label="Нравится">
+          </button>
+        </div>
+      </div>
+      </template>
+      <script src="./index.js" defer>
       </script>
       </body>
     </html>
