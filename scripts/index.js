@@ -33,7 +33,7 @@ buttonSaveEditPopup.addEventListener('submit',
     event.preventDefault();
     userName.textContent = formInputName.value;
     userDescription.textContent = formInputDescriptor.value;
-    editPopup.classList.remove('popup_opened');
+    closePopup(editPopup);
   }
 )
 
